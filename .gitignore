@@ -4,3 +4,4 @@ modules/Console/__pycache__/configLanguage.cpython-311.pyc
 modules/Console/__pycache__/SellectLanguage.cpython-311.pyc
 modules/Console/__pycache__/sellectLanguage.cpython-311.pyc
 __pycache__/configProgramm.cpython-311.pyc
+modules/Console/configs/language.txt
