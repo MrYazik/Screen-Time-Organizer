@@ -11,13 +11,8 @@ def inputLanguage():
     if (questionsForLanguage == "ru"):
         with open('modules/Console/configs/language.txt', 'w+') as f:
             a = f.write("ru")
-
-        with open('configs/isActivatedOneSettings.txt', 'w+') as f:
-            f.write("true")
         print() # Отступ
     elif (questionsForLanguage == "en"):
-        with open('configs/isActivatedOneSettings.txt', 'w+') as f:
-            f.write("true")
 
         print() # Отступ
     else:
