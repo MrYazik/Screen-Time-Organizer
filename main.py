@@ -1,6 +1,8 @@
 # Подключаемые модули
 
 from modules.Console.sellectLanguage import inputLanguage # Импортируем консольный модуль выбора языка
+from modules.Console.enterFirstSettings import activatedFirstConfig # Импортируем консольный модуль активации первой настройки
+from modules.Console.sellectMode import inputQuestionsMode # Испортируем модуль выбора режима
 
 # Переменные
 
@@ -11,8 +13,14 @@ with open('configs/isActivatedOneSettings.txt', 'r') as f:
 
 # Активация модулей
 
-def OnSellectLanguage(): # Функция для вызова модуля по выбору языку
+def ActivatedFirstSettings(): # Функция для вызова модуля по выбору языку
     if (isActivatedOneSettings == "false"):
-        inputLanguage() # Активируем выбор языка    
+        inputLanguage() # Активируем выбор языка   
+        activatedFirstConfig() # Активируем модуль активации первой настройки
 
-OnSellectLanguage()
+ActivatedFirstSettings()
+
+# Запуск программы
+
+inputQuestionsMode() # Запрашиваем режим
+
